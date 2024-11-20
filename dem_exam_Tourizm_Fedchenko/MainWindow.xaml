@@ -1,0 +1,28 @@
+﻿<Window x:Class="dem_exam_Tourizm_Fedchenko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dem_exam_Tourizm_Fedchenko"
+        mc:Ignorable="d"
+        Title="{Binding ElementName=MainFrame, Path=Content.Title}" 
+        Height="640" Width="1200" MinHeight="720" MinWidth="1280"
+        WindowStartupLocation="CenterScreen"
+        Icon="/Resources/logo_full_color.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Image Source="/Resources/logo_full_color.png" Stretch="Fill" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="ТУРИСТИЧЕСКОЕ АГЕНТСТВО" FontWeight="Bold" FontSize="32"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" >
+            <Button x:Name="BtnBack" Content="Назад" Click="BtnBack_Click" Margin="0,0,10,0"/>
+        </StackPanel>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1" ContentRendered="MainFrame_ContentRendered"/>
+    </Grid>
+</Window>

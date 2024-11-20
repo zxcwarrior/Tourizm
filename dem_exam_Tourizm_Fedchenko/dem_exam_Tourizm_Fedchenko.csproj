@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2F7D4C3-BAB6-429D-AE74-2A6D10E74F12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dem_exam_Tourizm_Fedchenko</RootNamespace>
+    <AssemblyName>dem_exam_Tourizm_Fedchenko</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Model\Country.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataBase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataBase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataBase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Hotel.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HotelComment.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HotelImage.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sysdiagrams.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Tour.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Type.cs">
+      <DependentUpon>DataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HotelEditPage.xaml.cs">
+      <DependentUpon>HotelEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HotelPage.xaml.cs">
+      <DependentUpon>HotelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TourListPage.xaml.cs">
+      <DependentUpon>TourListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\TempListPage.xaml.cs">
+      <DependentUpon>TempListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Manager.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\HotelEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HotelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TourListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Temp\TempListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\DataBase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataBase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\DataBase.edmx.diagram">
+      <DependentUpon>DataBase.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Temp\6_ДЭ Туризм\Marking Scheme.xlsx" />
+    <None Include="Temp\6_ДЭ Туризм\Задание Туры.docx" />
+    <None Include="Temp\6_ДЭ Туризм\Импорт\Копия Отели.xls" />
+    <None Include="Temp\6_ДЭ Туризм\Импорт\Отели.xls" />
+    <None Include="Temp\6_ДЭ Туризм\Импорт\Страны.csv" />
+    <None Include="Temp\6_ДЭ Туризм\Импорт\Туры.xlsx" />
+    <None Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Thumbs.db" />
+    <None Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Болгарское наследие — копия - Ярлык.lnk" />
+    <None Include="Temp\6_ДЭ Туризм\Руководство по стилю.pdf" />
+    <None Include="Temp\Tourizm.bacpac" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\logo_full_color.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\picture.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Болгарское наследие.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Волшебный Восток %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Волшебный Восток.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Город с большими амбициями.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Город четырех ворот.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Древний Минск %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Древний Минск.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Жемчужина Татарстана.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Знакомьтесь, Амстердам!.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Из Алании к загадочным пещерам Алтынбешик.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Многоликий Сувон %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Многоликий Сувон.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Москва поэтическая.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Незабываемый Дели %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Незабываемый Дели.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\По старому Таллину.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Романтика белых ночей и разводных мостов %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Романтика белых ночей и разводных мостов.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Свидание с Хельсинки.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Сердце Ирана %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Сердце Ирана.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Сердце Северной Карелии %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Сердце Северной Карелии.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Старый город %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Старый город.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Столица страны Утренней Свежести %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Столица страны Утренней Свежести.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Страна идеальной гармонии %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Страна идеальной гармонии.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Урбанистическая Бразилия.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Финская крепость.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Финский романтизм %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Финский романтизм.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\DataBase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataBase.edmx</DependentUpon>
+      <LastGenOutput>DataBase.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\DataBase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataBase.edmx</DependentUpon>
+      <LastGenOutput>DataBase.cs</LastGenOutput>
+    </Content>
+    <Resource Include="Temp\6_ДЭ Туризм\1.png" />
+    <Resource Include="Temp\6_ДЭ Туризм\2.png" />
+    <Resource Include="Temp\6_ДЭ Туризм\3.png" />
+    <Content Include="Temp\6_ДЭ Туризм\ms.sql" />
+    <Content Include="Temp\6_ДЭ Туризм\my.sql" />
+    <Resource Include="Temp\6_ДЭ Туризм\picture.png" />
+    <Resource Include="Temp\6_ДЭ Туризм\tours_page.png" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Болгарское наследие.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Волшебный Восток %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Волшебный Восток.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Город с большими амбициями.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Город четырех ворот.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Древний Минск %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Древний Минск.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Жемчужина Татарстана.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Знакомьтесь, Амстердам!.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Из Алании к загадочным пещерам Алтынбешик.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Многоликий Сувон %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Многоликий Сувон.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Москва поэтическая.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Незабываемый Дели %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Незабываемый Дели.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\По старому Таллину.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Романтика белых ночей и разводных мостов %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Романтика белых ночей и разводных мостов.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Свидание с Хельсинки.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Ирана %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Ирана.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Северной Карелии %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Северной Карелии.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Старый город %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Старый город.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Столица страны Утренней Свежести %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Столица страны Утренней Свежести.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Страна идеальной гармонии %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Страна идеальной гармонии.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Урбанистическая Бразилия.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Финская крепость.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Финский романтизм %281%29.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Финский романтизм.jpg" />
+    <Resource Include="Temp\6_ДЭ Туризм\Ссылка на видео.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
