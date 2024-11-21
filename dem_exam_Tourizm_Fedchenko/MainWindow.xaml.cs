@@ -16,14 +16,7 @@ namespace dem_exam_Tourizm_Fedchenko
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-            if (Manager.MainFrame.CanGoBack)
-            {
-                Manager.MainFrame.GoBack();
-            }
-            else
-            {
-                MessageBox.Show("Ошибка возвращения","Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            Manager.MainFrame.GoBack();
         }
 
         private void MainFrame_ContentRendered(object sender, System.EventArgs e)

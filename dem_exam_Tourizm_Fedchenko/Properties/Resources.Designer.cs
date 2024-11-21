@@ -103,16 +103,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Волшебный_Восток__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Волшебный_Восток__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Город_с_большими_амбициями {
             get {
                 object obj = ResourceManager.GetObject("Город_с_большими_амбициями", resourceCulture);
@@ -136,16 +126,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         internal static System.Drawing.Bitmap Древний_Минск {
             get {
                 object obj = ResourceManager.GetObject("Древний_Минск", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Древний_Минск__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Древний_Минск__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,16 +173,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Многоликий_Сувон__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Многоликий_Сувон__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Москва_поэтическая {
             get {
                 object obj = ResourceManager.GetObject("Москва_поэтическая", resourceCulture);
@@ -216,16 +186,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         internal static System.Drawing.Bitmap Незабываемый_Дели {
             get {
                 object obj = ResourceManager.GetObject("Незабываемый_Дели", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Незабываемый_Дели__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Незабываемый_Дели__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,16 +213,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Романтика_белых_ночей_и_разводных_мостов__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Романтика_белых_ночей_и_разводных_мостов__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Свидание_с_Хельсинки {
             get {
                 object obj = ResourceManager.GetObject("Свидание_с_Хельсинки", resourceCulture);
@@ -283,29 +233,9 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Сердце_Ирана__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Сердце_Ирана__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Сердце_Северной_Карелии {
             get {
                 object obj = ResourceManager.GetObject("Сердце_Северной_Карелии", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Сердце_Северной_Карелии__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Сердце_Северной_Карелии__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,16 +253,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Старый_город__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Старый_город__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Столица_страны_Утренней_Свежести {
             get {
                 object obj = ResourceManager.GetObject("Столица_страны_Утренней_Свежести", resourceCulture);
@@ -343,29 +263,9 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Столица_страны_Утренней_Свежести__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Столица_страны_Утренней_Свежести__1_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Страна_идеальной_гармонии {
             get {
                 object obj = ResourceManager.GetObject("Страна_идеальной_гармонии", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Страна_идеальной_гармонии__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Страна_идеальной_гармонии__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,16 +296,6 @@ namespace dem_exam_Tourizm_Fedchenko.Properties {
         internal static System.Drawing.Bitmap Финский_романтизм {
             get {
                 object obj = ResourceManager.GetObject("Финский_романтизм", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Финский_романтизм__1_ {
-            get {
-                object obj = ResourceManager.GetObject("Финский_романтизм__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

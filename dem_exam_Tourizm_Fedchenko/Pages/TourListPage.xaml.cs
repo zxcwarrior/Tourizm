@@ -1,18 +1,6 @@
-﻿using dem_exam_Tourizm_Fedchenko.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Linq;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using dem_exam_Tourizm_Fedchenko.Model;
 
 namespace dem_exam_Tourizm_Fedchenko.Pages
 {
@@ -43,6 +31,9 @@ namespace dem_exam_Tourizm_Fedchenko.Pages
 
             currentTours = currentTours.Where(x => x.Name.ToLower().Contains(TBxSearch.Text.ToLower())).ToList();
 
+            if (CBxIsActual.IsChecked == true)
+                currentTours = currentTours.Where(x => x.IsActual).ToList();
+
             LVTour.ItemsSource = currentTours;
         }
 
@@ -52,6 +43,16 @@ namespace dem_exam_Tourizm_Fedchenko.Pages
         }
 
         private void CBxTypes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateTours();
+        }
+
+        private void CBxIsActual_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            UpdateTours();
+        }
+
+        private void CBxIsActual_Unchecked(object sender, System.Windows.RoutedEventArgs e)
         {
             UpdateTours();
         }

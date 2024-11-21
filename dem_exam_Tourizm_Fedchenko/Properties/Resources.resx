@@ -130,9 +130,6 @@
   <data name="Волшебный_Восток" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Волшебный Восток.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Волшебный_Восток__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Волшебный Восток (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Город_с_большими_амбициями" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Город с большими амбициями.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,9 +138,6 @@
   </data>
   <data name="Древний_Минск" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Древний Минск.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Древний_Минск__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Древний Минск (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Жемчужина_Татарстана" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Жемчужина Татарстана.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,17 +151,11 @@
   <data name="Многоликий_Сувон" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Многоликий Сувон.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Многоликий_Сувон__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Многоликий Сувон (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Москва_поэтическая" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Москва поэтическая.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Незабываемый_Дели" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Незабываемый Дели.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Незабываемый_Дели__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Незабываемый Дели (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="По_старому_Таллину" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\По старому Таллину.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,41 +163,23 @@
   <data name="Романтика_белых_ночей_и_разводных_мостов" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Романтика белых ночей и разводных мостов.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Романтика_белых_ночей_и_разводных_мостов__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Романтика белых ночей и разводных мостов (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Свидание_с_Хельсинки" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Свидание с Хельсинки.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Сердце_Ирана" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Сердце Ирана.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Сердце_Ирана__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Сердце Ирана (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Сердце_Северной_Карелии" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Сердце Северной Карелии.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Сердце_Северной_Карелии__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Сердце Северной Карелии (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Старый_город" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Старый город.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Старый_город__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Старый город (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Столица_страны_Утренней_Свежести" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Столица страны Утренней Свежести.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Столица_страны_Утренней_Свежести__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Столица страны Утренней Свежести (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Страна_идеальной_гармонии" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Страна идеальной гармонии.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Страна_идеальной_гармонии__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Страна идеальной гармонии (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Урбанистическая_Бразилия" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Урбанистическая Бразилия.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -219,8 +189,5 @@
   </data>
   <data name="Финский_романтизм" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Финский романтизм.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Финский_романтизм__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Финский романтизм (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

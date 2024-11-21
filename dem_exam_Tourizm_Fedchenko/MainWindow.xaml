@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dem_exam_Tourizm_Fedchenko"
         mc:Ignorable="d"
-        Title="{Binding ElementName=MainFrame, Path=Content.Title}" 
+        Title="ООО 'Туристическое агенство'" 
         Height="640" Width="1200" MinHeight="720" MinWidth="1280"
         WindowStartupLocation="CenterScreen"
         Icon="/Resources/logo_full_color.png">
@@ -18,7 +18,7 @@
             <Image Source="/Resources/logo_full_color.png" Stretch="Fill" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
         </StackPanel>
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="ТУРИСТИЧЕСКОЕ АГЕНТСТВО" FontWeight="Bold" FontSize="32"/>
+            <TextBlock Text="{Binding ElementName=MainFrame, Path=Content.Title}" FontWeight="Bold" FontSize="32"/>
         </StackPanel>
         <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" >
             <Button x:Name="BtnBack" Content="Назад" Click="BtnBack_Click" Margin="0,0,10,0"/>

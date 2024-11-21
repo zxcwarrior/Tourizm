@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:dem_exam_Tourizm_Fedchenko.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HotelPage">
+      Title="Список отелей"
+      IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -16,17 +17,21 @@
         
         <DataGrid x:Name="DtGridHotels" AutoGenerateColumns="False" Grid.Row="0">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название отеля" Binding="{Binding Name}"/>
-                <DataGridTextColumn Header="Количество звезд" Binding="{Binding CountOfStars}"/>
-                <DataGridTextColumn Header="Страны" Binding="{Binding Country.Name}"/>
+                <DataGridTextColumn Header="Название отеля" Binding="{Binding Name}" Foreground="Black" FontFamily="Comic Sans MS"/>
+                <DataGridTextColumn Header="Количество звезд" Binding="{Binding CountOfStars}" Foreground="Black" FontFamily="Comic Sans MS"/>
+                <DataGridTextColumn Header="Страны" Binding="{Binding Country.CountryName}" Foreground="Black" FontFamily="Comic Sans MS"/>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button x:Name="EditBtn" Content="Редактировать"/>
+                            <Button x:Name="EditBtn" Click="EditBtn_Click"  Content="Редактировать" Foreground="Black"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button x:Name="AddHotelBtn" Content="Добавить" Click="AddHotelBtn_Click" Margin="10,10,0,0"/>
+            <Button x:Name="DelHotelBtn" Content="Удалить" Click="DelHotelBtn_Click"  Margin="10,10,0,0"/>
+        </StackPanel>
     </Grid>
 </Page>

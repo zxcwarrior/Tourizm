@@ -113,8 +113,10 @@
     <Compile Include="Pages\TourListPage.xaml.cs">
       <DependentUpon>TourListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Temp\TempListPage.xaml.cs">
-      <DependentUpon>TempListPage.xaml</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\Manager.cs" />
     <Page Include="MainWindow.xaml">
@@ -145,19 +147,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Temp\TempListPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -166,6 +159,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EntityDeploy Include="Model\DataBase.edmx">
@@ -180,16 +174,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Temp\6_ДЭ Туризм\Marking Scheme.xlsx" />
-    <None Include="Temp\6_ДЭ Туризм\Задание Туры.docx" />
-    <None Include="Temp\6_ДЭ Туризм\Импорт\Копия Отели.xls" />
-    <None Include="Temp\6_ДЭ Туризм\Импорт\Отели.xls" />
-    <None Include="Temp\6_ДЭ Туризм\Импорт\Страны.csv" />
-    <None Include="Temp\6_ДЭ Туризм\Импорт\Туры.xlsx" />
-    <None Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Thumbs.db" />
-    <None Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Болгарское наследие — копия - Ярлык.lnk" />
-    <None Include="Temp\6_ДЭ Туризм\Руководство по стилю.pdf" />
-    <None Include="Temp\Tourizm.bacpac" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -210,11 +194,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Волшебный Восток %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Волшебный Восток.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -226,11 +205,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Город четырех ворот.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Древний Минск %281%29.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -255,22 +229,12 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Многоликий Сувон %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Многоликий Сувон.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Москва поэтическая.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Незабываемый Дели %281%29.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -285,11 +249,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Романтика белых ночей и разводных мостов %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Романтика белых ночей и разводных мостов.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -300,17 +259,7 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Сердце Ирана %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Сердце Ирана.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Сердце Северной Карелии %281%29.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -320,27 +269,12 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Старый город %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Старый город.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Столица страны Утренней Свежести %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Столица страны Утренней Свежести.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Страна идеальной гармонии %281%29.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -356,11 +290,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Финская крепость.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Финский романтизм %281%29.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -383,47 +312,6 @@
       <DependentUpon>DataBase.edmx</DependentUpon>
       <LastGenOutput>DataBase.cs</LastGenOutput>
     </Content>
-    <Resource Include="Temp\6_ДЭ Туризм\1.png" />
-    <Resource Include="Temp\6_ДЭ Туризм\2.png" />
-    <Resource Include="Temp\6_ДЭ Туризм\3.png" />
-    <Content Include="Temp\6_ДЭ Туризм\ms.sql" />
-    <Content Include="Temp\6_ДЭ Туризм\my.sql" />
-    <Resource Include="Temp\6_ДЭ Туризм\picture.png" />
-    <Resource Include="Temp\6_ДЭ Туризм\tours_page.png" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Болгарское наследие.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Волшебный Восток %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Волшебный Восток.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Город с большими амбициями.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Город четырех ворот.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Древний Минск %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Древний Минск.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Жемчужина Татарстана.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Знакомьтесь, Амстердам!.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Из Алании к загадочным пещерам Алтынбешик.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Многоликий Сувон %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Многоликий Сувон.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Москва поэтическая.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Незабываемый Дели %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Незабываемый Дели.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\По старому Таллину.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Романтика белых ночей и разводных мостов %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Романтика белых ночей и разводных мостов.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Свидание с Хельсинки.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Ирана %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Ирана.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Северной Карелии %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Сердце Северной Карелии.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Старый город %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Старый город.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Столица страны Утренней Свежести %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Столица страны Утренней Свежести.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Страна идеальной гармонии %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Страна идеальной гармонии.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Урбанистическая Бразилия.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Финская крепость.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Финский романтизм %281%29.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Импорт\Фото туров\Финский романтизм.jpg" />
-    <Resource Include="Temp\6_ДЭ Туризм\Ссылка на видео.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

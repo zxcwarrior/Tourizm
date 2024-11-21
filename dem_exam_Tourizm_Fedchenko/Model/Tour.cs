@@ -29,18 +29,12 @@ namespace dem_exam_Tourizm_Fedchenko.Model
         public string ImagePreview { get; set; }
         public decimal Price { get; set; }
         public bool IsActual { get; set; }
+
         public string ActualStatus
         {
             get
             {
                 return (IsActual) ? "Актуален" : "Не актуален";
-            }
-        }
-        public string TourPhoto
-        {
-            get
-            {
-                return $"/Resources/{ImagePreview}.jpg";
             }
         }
 
@@ -59,6 +53,13 @@ namespace dem_exam_Tourizm_Fedchenko.Model
             }
         }
 
+        public string TourPhoto
+        {
+            get
+            {
+                return $"/Resources/{ImagePreview}.jpg";
+            }
+        }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hotel> Hotel { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

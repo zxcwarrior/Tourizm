@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:dem_exam_Tourizm_Fedchenko.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ООО 'Туристическое агенство'">
+      Title="Путешествие в концы">
 
     <Grid>
         <Grid.ColumnDefinitions>

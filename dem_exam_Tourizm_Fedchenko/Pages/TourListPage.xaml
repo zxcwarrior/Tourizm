@@ -3,11 +3,16 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:dem_exam_Tourizm_Fedchenko.Pages"
+      xmlns:local="clr-namespace:dem_exam_Tourizm_Fedchenko.Pages" xmlns:sys="clr-namespace:System;assembly=mscorlib"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="TourListPage">
+      Title="Список туров">
 
+    <Page.Resources>
+        <sys:String x:Key="NullImage">
+            pack://application:,,,/Resources/picture.png
+        </sys:String>
+    </Page.Resources>
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -15,15 +20,15 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Vertical" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Введите текст для поиска" FontSize="22"/>
-                <TextBox x:Name="TBxSearch" Width="150" TextChanged="TBxSearch_TextChanged"/>
+                <TextBlock Text="Введите текст для поиска" FontSize="22" Margin="10,0,0,0"/>
+                <TextBox x:Name="TBxSearch" Width="150" TextChanged="TBxSearch_TextChanged" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Выберите тип" FontSize="22"/>
-                <ComboBox x:Name="CBxTypes" Width="150" DisplayMemberPath="Name" SelectionChanged="CBxTypes_SelectionChanged"/>
+                <ComboBox x:Name="CBxTypes" Width="200" DisplayMemberPath="Name" SelectionChanged="CBxTypes_SelectionChanged"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <CheckBox VerticalAlignment="Center"/>
+                <CheckBox x:Name="CBxIsActual" Checked="CBxIsActual_Checked" Unchecked="CBxIsActual_Unchecked" VerticalAlignment="Center"/>
                 <TextBlock Text="Только актуальные туры" FontSize="20"/>
             </StackPanel>
         </StackPanel>
@@ -39,9 +44,9 @@
                     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" >
                         <TextBlock Text="{Binding Name}"/>
                         <Border Height="150" Width="100" BorderBrush="Black" BorderThickness="2">
-                            <Image Stretch="Fill" Source="{Binding TourPhoto}"/>
+                            <Image Stretch="Fill" Source="{Binding TourPhoto, FallbackValue={StaticResource NullImage}}"/>
                         </Border>
-                        <TextBlock Text="{Binding Price}" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Price, StringFormat={}{0:F2} руб}" HorizontalAlignment="Center"/>
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock x:Name="TBIsAct" Text="{Binding ActualStatus}" HorizontalAlignment="Left" FontSize="16" Foreground="{Binding colorBrush}"/>
                             <TextBlock Text="" Width="75"/>
