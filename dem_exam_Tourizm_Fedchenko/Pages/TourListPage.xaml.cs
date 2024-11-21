@@ -29,10 +29,10 @@ namespace dem_exam_Tourizm_Fedchenko.Pages
             if (CBxTypes.SelectedIndex > 0)
                 currentTours = currentTours.Where(p => p.Type.Contains(CBxTypes.SelectedItem as dem_exam_Tourizm_Fedchenko.Model.Type)).ToList();
 
-            currentTours = currentTours.Where(x => x.Name.ToLower().Contains(TBxSearch.Text.ToLower())).ToList();
+            currentTours = currentTours.Where(p => p.Name.ToLower().Contains(TBxSearch.Text.ToLower())).ToList();
 
             if (CBxIsActual.IsChecked == true)
-                currentTours = currentTours.Where(x => x.IsActual).ToList();
+                currentTours = currentTours.Where(p => p.IsActual).ToList();
 
             LVTour.ItemsSource = currentTours;
         }
